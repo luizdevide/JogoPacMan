@@ -11,8 +11,8 @@ public class scriptPacman : MonoBehaviour {
 
 	void Start () {
 		rbd = GetComponent<Rigidbody> ();
-		velocidade = 10;
-		velocidadeRot = 200;
+		velocidade = 40;
+		velocidadeRot = 100;
 		Cursor.lockState = CursorLockMode.Locked;
 	}
 
@@ -21,7 +21,7 @@ public class scriptPacman : MonoBehaviour {
 		float x = Input.GetAxis ("Horizontal");
 		rotY += Input.GetAxis ("Mouse X") * velocidadeRot * Time.deltaTime;
 		rotX += Input.GetAxis ("Mouse Y") * velocidadeRot * Time.deltaTime;
-		rbd.velocity = transform.TransformDirection(new Vector3 (x* velocidade,z* velocidade));
+		rbd.velocity = transform.TransformDirection(new Vector3 (x* velocidade,0,z* velocidade));
 		if(Input.GetKeyDown(KeyCode.Space))
 			rbd.AddForce (0,200,0);
 		transform.localEulerAngles = new Vector3(0,rotY,0);
