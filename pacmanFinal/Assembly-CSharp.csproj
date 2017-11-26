@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\capsulaScript.cs" />
      <Compile Include="Assets\Scripts\ghostScript.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
+     <Compile Include="Assets\Scripts\sairScript.cs" />
      <Compile Include="Assets\Scripts\scriptPacman.cs" />
      <None Include="Assets\Materiais\StoneWalls\readme.txt" />
  <Reference Include="UnityEngine.UI">

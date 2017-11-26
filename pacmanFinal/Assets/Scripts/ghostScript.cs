@@ -24,7 +24,7 @@ public class ghostScript : MonoBehaviour {
 	public void OnCollisionEnter(Collision collision){
 
 		if (collision.gameObject.tag == "Player") {
-			SceneManager.LoadScene ("menu");
+			SceneManager.LoadScene ("menu2");
 		}
 	}
 }
