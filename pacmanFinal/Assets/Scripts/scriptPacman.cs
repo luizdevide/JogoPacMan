@@ -7,11 +7,10 @@ public class scriptPacman : MonoBehaviour {
 	public float velocidade;
 	public float velocidadeRot;
 	private float rotY=0;
-	private float rotX=0;
 
 	void Start () {
 		rbd = GetComponent<Rigidbody> ();
-		velocidade = 40;
+		velocidade = 50;
 		velocidadeRot = 100;
 		Cursor.lockState = CursorLockMode.Locked;
 	}
@@ -24,4 +23,5 @@ public class scriptPacman : MonoBehaviour {
 		transform.localEulerAngles = new Vector3(0,rotY,0);
 		Camera.main.transform.localEulerAngles = new Vector3 (Mathf.Clamp(0,-70,70),0,0);
 	}
+		
 }
